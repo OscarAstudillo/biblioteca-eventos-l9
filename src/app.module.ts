@@ -8,6 +8,8 @@ import { MensajeriaModule } from './mensajeria/mensajeria.module.js';
 import { PersistenciaModule } from './persistencia/persistencia.module.js';
 import { SaludController } from './salud.controller.js';
 
+import { StreamingModule } from './streaming/streaming.module.js';
+
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
@@ -17,6 +19,7 @@ import { SaludController } from './salud.controller.js';
     NotificacionesModule,
     CorreosModule,
     CartasMuertasModule,
+    StreamingModule,
   ],
   controllers: [SaludController],
 })
